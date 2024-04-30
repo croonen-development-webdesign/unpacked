@@ -3,7 +3,7 @@
 <plist>
     <dict>
         <key>Label</key>
-        <string>nl.jcroonen.dashboard</string>
+        <string>nl.jcroonen.unpacked</string>
         <key>WorkingDirectory</key>
         <string>/Users/ares/Dev/node/unpacked/app</string>
         <key>ProgramArguments</key>
