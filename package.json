@@ -18,6 +18,7 @@
     "punload": "launchctl unload ~/Library/LaunchAgents/nl.jcroonen.${config.app_name}.plist;defaults read ~/Library/LaunchAgents/nl.jcroonen.unpacked.plist"
   },
   "dependencies": {
+    "@types/jquery": "^3.5.29",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
