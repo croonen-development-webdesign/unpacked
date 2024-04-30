@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist>
+    <dict>
+        <key>Label</key>
+        <string>nl.jcroonen.dashboard</string>
+        <key>WorkingDirectory</key>
+        <string>/Users/ares/Dev/node/unpacked/app</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/ares/.nvm/versions/node/v18.16.0/bin/node</string>
+            <string>bin/www</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>StandardOutPath</key>
+        <string>..logs/access.log</string>
+        <key>StandardErrorPath</key>
+        <string>../logs/error.log</string>
+        <key>jc_IdeDirectory</key>
+        <string>/Users/ares/Dev/node/unpacked</string>
+        <key>jc_Description</key>
+        <string>List and manage unpacked extensions as used by Edge</string>
+        <key>jc_Port</key>
+        <string>3019</string>
+    </dict>
+</plist>

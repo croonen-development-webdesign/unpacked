@@ -1,0 +1,29 @@
+extends ../layout
+
+block content
+    div(class="index")
+    h1 Reveal Unpacked Source Chrome Extensions
+    div=extensions.length + " external extensions installed"
+    include extensions-filter
+    ul
+        each extension in extensions
+            li(class='item')
+                div
+                    img(src='api/image/?iconpath=' + extension.rootDir + '/' + extension.iconPath, class='extension-icon')
+                div
+                    span(class='name')=extension.name
+                    div
+                        span(class='description')=extension.description
+                    div
+                        a(class="jq-to-ide2" data-path=extension.rootDir) ide
+                        span &nbsp;|&nbsp;
+                        a(class="jq-to-ide" data-id=extension.id) reveal
+                        span &nbsp;|&nbsp;
+                        a(href=extension.homepage_url target='_blank' class='homepage-link') homepage -
+                        - var cls = extension.manifest_version === 2 ? 'version2' : 'version3'
+                        span(class=cls)= ' m' + extension.manifest_version
+                        span &nbsp;-&nbsp;
+                        span(class='store')=extension.store
+block head-js
+    link(rel='stylesheet', href='/stylesheets/extensions.css')
+    script(src='/javascripts/extensions.js')

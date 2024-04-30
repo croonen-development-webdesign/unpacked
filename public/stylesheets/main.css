@@ -1,0 +1,84 @@
+body {
+    padding: 20px 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+body.dark {
+    background-color: #2c2d28;
+    color: #f8f8f1;
+}
+a {
+    color: #00B7FF;
+    text-decoration: none;
+    padding: 1px;
+}
+a:hover {
+    color: #3366dd;
+    background-color: bisque;
+}
+li {
+    list-style: none;
+}
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+.horizontal-spacer {
+    flex: 1 1 auto;
+    min-width: 30px;
+}
+.header {
+    font-size: large;
+}
+.header a {
+    padding: 4px;
+}
+.title {
+    font-size: 16px;
+    color: #c75;
+}
+.dark .title  a {
+    color: #cc7755
+}
+.dark input {
+    background-color: #999;
+}
+.title.running a {
+    color: #335533;
+}
+.dark .title.running a {
+    color: #55dd55;
+}
+.title a {
+    color: #335577;
+}
+.title.notfound {
+    color: red;
+}
+.title.notfound a {
+    color: red;
+}
+.description {
+    white-space: pre-line;
+}
+.active {
+    color: #6a6;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -50px;
+    line-height: 1.3;
+    font-size: 16px;
+}
+.col1 {
+    margin-right: 40px;
+    display: none;
+}
+.col2 {
+    height: fit-content;
+    margin-left: 48px;
+}
+.favicon img {
+    width: 24px;
+}

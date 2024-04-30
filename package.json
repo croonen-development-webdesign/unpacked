@@ -1,0 +1,29 @@
+{
+  "name": "unpacked",
+  "version": "0.0.0",
+  "private": true,
+  "config": {
+    "app_name": "unpacked"
+  },
+  "scripts": {
+    "debug": "node $NODE_DEBUG_OPTION app/bin/www",
+    "start": "node app/bin/www",
+    "start-warn": "node --trace-warnings app/bin/www",
+    "pcopy": "cp plist/nl.jcroonen.${config.app_name}.plist ~/Library/LaunchAgents",
+    "pstart": "launchctl start nl.jcroonen.${config.app_name}",
+    "pstop": "launchctl stop nl.jcroonen.${config.app_name}",
+    "prestart": "launchctl stop nl.jcroonen.${config.app_name};launchctl start nl.jcroonen.${config.app_name}",
+    "plist": "launchctl list | grep jcroonen",
+    "pload": "launchctl load -w ~/Library/LaunchAgents/nl.jcroonen.${config.app_name}.plist",
+    "punload": "launchctl unload ~/Library/LaunchAgents/nl.jcroonen.${config.app_name}.plist;defaults read ~/Library/LaunchAgents/nl.jcroonen.unpacked.plist"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "plist": "^3.1.0",
+    "pug": "2.0.0-beta11"
+  }
+}

@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    script(src='https://code.jquery.com/jquery-1.11.1.js')
+    script(src='/javascripts/filter.js')
+    block head-js
+  body(class="dark")
+    block content

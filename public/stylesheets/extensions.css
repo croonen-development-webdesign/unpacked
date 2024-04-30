@@ -1,0 +1,45 @@
+.selected {
+    background-color: #eef;
+    color: #2c2d28;
+}
+.non-existing {
+    opacity: .5;
+}
+.extension-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.disabled {
+    opacity: .5;
+}
+.description {
+    font-size: 12px;
+    color: #999;
+}
+ul {
+    column-width: 20em;
+}
+li {
+    break-inside: avoid;
+    margin-bottom: 30px;
+    display: flex;
+}
+.homepage-link {
+    opacity: .6;
+}
+.homepage-link[href] {
+    opacity: 1;
+}
+.version2 {
+    color: #cc7755;
+}
+.version3 {
+    color: #9977cc;
+}
+.store {
+    opacity: .6;
+}
+.name {
+    color: #eeeeff;
+}
