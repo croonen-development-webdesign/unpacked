@@ -5,7 +5,7 @@
         <key>Label</key>
         <string>nl.jcroonen.unpacked</string>
         <key>WorkingDirectory</key>
-        <string>/Users/ares/Dev/node/unpacked/app</string>
+        <string>/Users/ares/Dev/node/unpacked</string>
         <key>ProgramArguments</key>
         <array>
             <string>/Users/ares/.nvm/versions/node/v18.16.0/bin/node</string>
