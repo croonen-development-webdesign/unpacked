@@ -23,5 +23,7 @@
         <string>List and manage unpacked extensions as used by Edge</string>
         <key>jc_Port</key>
         <string>3019</string>
+        <key>jc_RepoName</key>
+        <string>croonen-development-webdesign/unpacked.git</string>
     </dict>
 </plist>
